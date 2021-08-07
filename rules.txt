@@ -1,0 +1,26 @@
+1. Checks if constants (UPPER_CASE_WITH_UNDERSCORES) are truly constant; doesn't care about by-chance constants. covers _{0,2}[A-Z_]+ because
+protected/private constants help with importing. Note that it checks for global/module constants only. Function/class constants are discouraged, though I
+plan to add them later. Pardons one if-statement-orelse+ for const initialization.
+
+2. Class names, variable names, function names are enforced
+
+3. checks singletons comparisons
+
+4. catches some mistakes regarding static, class, and instance methods.
+
+5. Suggests is not over not is.
+
+6. Blocks denonymizing lambdas.
+
+7. Warns about assigning opened files without with-as. Wild opened files are detected too.
+
+8. Easy hierarchical warning supression system
+
+9. Enforce use of built-ins over directly calling dunders
+
+10. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return
+statements where no value is returned should explicitly state this as return None.
+
+11. isinstance over type is, and subclass over type is type
+
+12. Predicts most infinite loops, unreachables, boolean optimizations

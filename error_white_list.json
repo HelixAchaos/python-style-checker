@@ -1,0 +1,18 @@
+{
+  "Exception": false,
+  "SoftError": false,
+  "ConstantConventionError": false,
+  "SnakeCaseConventionError": false,
+  "CapitalWordsConventionError": false,
+  "MethodConventionError": false,
+  "SingletonIsEqConventionError":  false,
+  "IsNotConventionError": false,
+  "LambdaDenonymizedConventionError": false,
+  "RedundantConventionError":  false,
+  "LightOutDatedConventionError": false,
+  "BuiltInsInsteadOfDunderConventionError": false,
+  "BlankReturnConventionError": false,
+  "TypeInheritanceConventionError": false,
+  "ComparisonConventionError": false,
+  "TestConventionError": false
+}
